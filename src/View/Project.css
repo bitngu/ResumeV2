@@ -1,0 +1,127 @@
+#project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5D6A75;
+    filter: brightness(0.8);
+}
+
+div.title-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+div.project-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.title-projects > h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+div.title-projects  span {
+    font-weight: 600;
+}
+
+div.project {
+    margin: 20px;
+}
+div.img-container {
+    max-width: 350px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+img.web-icon {
+    width: 25px;
+    height: 25px;
+    animation: rotate360 10s infinite linear;
+    position: relative;
+}
+img.web-icon:hover {
+    cursor: pointer;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+div.project-caption h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+div.project-caption p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+div.img-container > img {
+  opacity: 1;
+  height: auto;
+  transition: transform 0.4s ease;
+  transform-origin: 50% 50%;
+}
+
+div.img-container:hover > img {
+    transform: scale(1.1);
+}
+div.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+div.projects-overlay{
+    opacity: 0;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } 
+
+
+div.img-container:hover div.projects-overlay {
+    opacity: .8;
+}
+
+div.github-link {
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    border-color: white;
+    border-style: solid;
+    cursor: default;
+    position: relative;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    transition: 1s;
+}
+
+div.github-link:hover {
+    background-color: white;
+    color:black;
+    
+}
+div.github-link  > h3 {
+    margin:0
+}

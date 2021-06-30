@@ -1,0 +1,83 @@
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D6A75;
+    filter: brightness(0.8);
+}
+
+div.title-education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+div.title-education > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.education-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.vertical-bar {
+    width: .5px;
+    margin-right: 20px;
+    background-color: black;
+    margin-top: -30px;
+    position: relative;
+}
+
+span.circle-dot {
+    border-radius: 8px;
+    height: 16px;
+    width: 16px;
+    background-color: black;
+    position: absolute;
+
+    
+}
+
+
+div.school,div.experience {
+    border: solid .1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    max-width: 500px;
+}
+div.education-content h4 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative;
+
+}
+
+div.education-content h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+div.education-content p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+div.education-content span {
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+h4 > span.circle-dot {
+    left: -39px;
+    top: -2px;
+}
