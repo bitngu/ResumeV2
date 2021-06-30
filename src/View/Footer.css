@@ -28,10 +28,10 @@ div.footer-content h3 {
     overflow: hidden;
 }
 
-div#rotate-logo1:hover > img, div#rotate-logo2:hover > img, div#rotate-logo3:hover > img {
+div#rotate-logo1:hover > img, div#rotate-logo2:hover > img, div#rotate-logo3:hover img {
     animation: forward360 0.5s linear;
 }
-div#rotate-logo1 > img, div#rotate-logo2 > img, div#rotate-logo3 > img {
+div#rotate-logo1 > img, div#rotate-logo2 > img, div#rotate-logo3 img {
     animation: reverse360 0.5s linear;
 }
 
