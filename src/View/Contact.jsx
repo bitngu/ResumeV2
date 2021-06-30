@@ -31,12 +31,14 @@ const Contact = () => {
             method ='POST'
             data-netlify = 'true'>
                 <input type="hidden" name="form-name" value = "contact-form" />
-                <input type ='text' name = 'name' placeholder = 'Enter your name...'></input>
+                <div className="userName">
+                    <h3>Name</h3>
+                    <input type ='text' name = 'name' placeholder = 'ENTER YOUR NAME*'></input>
+                </div>
                 <input type ='email' name = 'email' placeholder = 'Enter your email...'></input>
                 <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
                 <button type = 'submit'> Submit</button>
             </form>   
-
 
             </div>
         </section>
