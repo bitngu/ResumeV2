@@ -15,20 +15,18 @@
   </head>
   <body>
     <form id ='contact-form' method ="POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
-                netlify netlify-honeypot="bot-field" hidden>
+                netlify netlify-honeypot="bot-field" hidden >
                     <input type="hidden" name = 'form-name' value = 'contact-form'/>
-                    <form id ='contact-form' method ="POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
-                    netlify netlify-honeypot="bot-field" hidden>
-                        <input type="hidden" name = 'form-name' value= 'contact-form'/>
-                        <div className="field"> 
+                    <input type="hidden" name = 'form-name' value= 'contact-form'/>
+                      <div type = 'hidden' className="field"> 
                             <label> Name <input type="text" name ='name' /></label>
                         </div>
-                        <div className="field"> 
+                        <div type = 'hidden' className="field"> 
                             <label> Email 
                             <input type="email" name ='email' />
                             </label>
                         </div>
-                        <div className="field"> 
+                        <div type = 'hidden' className="field"> 
                             <label> Message 
                             <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'> </textarea>
                             </label>
