@@ -1,18 +1,18 @@
 import logo from '../graphics/logo.png'
 import './Contact.css'
 const Contact = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        let myForm = document.getElementById('contact-form');
-        let formData = new FormData(myForm);
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     let myForm = document.getElementById('contact-form');
+    //     let formData = new FormData(myForm);
         
-        fetch('/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: formData
-        }).then(() => console.log('Form successfully submitted')).catch((error) =>
-            alert(error))
-    }
+    //     fetch('/', {
+    //         method: 'POST',
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         body: formData
+    //     }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    //         alert(error))
+    // }
 
     return (  
         <section id ="contact">
