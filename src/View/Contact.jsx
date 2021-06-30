@@ -26,7 +26,8 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-        <form name="contact" method="post">
+                
+        <form name="contact" method="post" onSubmit = 'submit'>
         <input type="hidden" name="form-name" value="contact" />
         <p>
             <label htmlFor="name">Name</label> <br />
@@ -41,7 +42,7 @@ const Contact = () => {
             <textarea id="message" name="message" required></textarea>
         </p>
         <p>
-            <input type="submit" value="Submit message" />
+            <button type="submit" value="Submit message" />
         </p>
         </form>
                 {/* <form id ='contact-form' method ="POST"  data-netlify = 'true'  action ='' data-netlify-recaptcha="true" 
