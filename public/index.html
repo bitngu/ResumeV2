@@ -14,6 +14,21 @@
     <title>Bi Nguyen</title>
   </head>
   <body>
+    <form name='contact-form' netlify netlify-honeypot ='bot-field' action ='/' hidden>
+      <div className="field"> 
+        <label> Name <input type="text" name ='name' ' /></label>
+    </div>
+    <div className="field"> 
+        <label> Email 
+        <input type="email" name ='email' />
+        </label>
+    </div>
+    <div className="field"> 
+        <label> Message 
+        <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+        </label>
+    </div>
+    </form>
     <div id="root"></div>
   </body>
 </html>

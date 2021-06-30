@@ -26,52 +26,27 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-
-            <form method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-                {/* <form id ='contact-form' method ="POST"  data-netlify = 'true'  action ='' data-netlify-recaptcha="true" 
+                <form id ='contact-form' method ="POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
                 netlify netlify-honeypot="bot-field" hidden>
+                    <input type="hidden" name = 'form-name' value = 'contact-form'/>
                     <div className="field"> 
-                        <h3>Name</h3>
-                        <input type="text" name ='name' placeholder = 'Your name...' />
+                        <label> Name <input type="text" name ='name' placeholder = 'Your name...' /></label>
                     </div>
                     <div className="field"> 
-                        <h3>Email</h3>
+                        <label> Email 
                         <input type="email" name ='email' placeholder = 'Your Email...' />
+                        </label>
                     </div>
                     <div className="field"> 
-                        <h3>Message</h3>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...' value></textarea>
+                        <label> Message 
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'> </textarea>
+                        </label>
                     </div>
                     <div data-netlify-recaptcha = 'true'></div>
-                    <div onClick = {handleSubmit}className = "submit-button">
-                        <input type="submit" value ='Send Message'/>
+                    <div className = "submit-button">
+                        <button type="submit" value ='Send Message'/>
                     </div>
-                </form> */}
+                </form>
 
             </div>
         </section>
