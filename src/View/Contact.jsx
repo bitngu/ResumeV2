@@ -33,11 +33,11 @@ const Contact = () => {
                 <input type="hidden" name="form-name" value = "contact-form" />
                 <div className="userInfo">
                     <h3>Name</h3>
-                    <input type ='text' name = 'name' placeholder = 'Your name...'></input>
+                    <input type ='text' name = 'name' placeholder = 'Your name...' required></input>
                 </div>
                 <div className="userInfo">
                     <h3>Email</h3>
-                    <input type ='email' name = 'email' placeholder = 'Your email...'></input>
+                    <input type ='email' name = 'email' placeholder = 'Your email...' required></input>
                 </div>
                 <div className="userInfo">
                     <h3>Phone Number</h3>
@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 <div className="userInfo">
                     <h3>Message</h3>
-                    <textarea name="message" placeholder = 'Your message...' cols="30" rows="10"></textarea>
+                    <textarea name="message" placeholder = 'Your message...' cols="30" rows="10" required></textarea>
                 </div>
                 <div className="submit-container">
                     <button type = 'submit'> Send Message </button>
