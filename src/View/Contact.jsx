@@ -30,7 +30,7 @@ const Contact = () => {
             name = 'contact-form'
             method ='POST'
             data-netlify = 'true'>
-                <input type="hidden" name="form-name" id= "contact-form" />
+                <input type="hidden" name="form-name" value = "contact-form" />
                 <input type ='text' name = 'name' placeholder = 'Enter your name...'></input>
                 <input type ='email' name = 'email' placeholder = 'Enter your email...'></input>
                 <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
