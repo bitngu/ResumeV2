@@ -8,7 +8,7 @@ const Contact = () => {
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: JSON.stringify(myForm)
+            body: encode(myForm)
         }).then(() => console.log('Form successfully submitted')).catch((error) =>
             alert(error))
     }
