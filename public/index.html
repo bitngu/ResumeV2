@@ -14,26 +14,13 @@
     <title>Bi Nguyen</title>
   </head>
   <body>
-    <form id ='contact-form' method ="POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
-                netlify netlify-honeypot="bot-field" hidden >
-                    <input type="hidden" name = 'form-name' value = 'contact-form'/>
-                    <input type="hidden" name = 'form-name' value= 'contact-form'/>
-                      <div type = 'hidden' className="field"> 
-                            <label> Name <input type="text" name ='name' /></label>
-                        </div>
-                        <div type = 'hidden' className="field"> 
-                            <label> Email 
-                            <input type="email" name ='email' />
-                            </label>
-                        </div>
-                        <div type = 'hidden' className="field"> 
-                            <label> Message 
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'> </textarea>
-                            </label>
-                        </div>
-                    <div data-netlify-recaptcha = 'true'></div>
+    <form name='contact-form' netlify netlify-honeypot ='bot-field' action= "/" hidden>
+      <input type ='text' name = 'name'></input>
+      <input type ='email' name = 'email' ></input>
+      <textarea name="message" ></textarea>
     </form>
-
+    
+  
     <div id="root"></div>
   </body>
 </html>

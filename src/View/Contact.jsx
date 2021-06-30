@@ -26,27 +26,17 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-                <form id ='contact-form' method = "POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
-                netlify netlify-honeypot="bot-field"> 
-                    <input type="hidden" name = 'form-name' value= 'contact-form'/>
-                    <div className="field"> 
-                        <label> Name <input type="text" name ='name' placeholder = 'Your name...' /></label>
-                    </div>
-                    <div className="field"> 
-                        <label> Email 
-                        <input type="email" name ='email' placeholder = 'Your Email...' />
-                        </label>
-                    </div>
-                    <div className="field"> 
-                        <label> Message 
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'> </textarea>
-                        </label>
-                    </div>
-                    <div data-netlify-recaptcha = 'true'></div>
-                    <div className = "submit-button">
-                        <button type="submit" value ='Send Message'/>
-                    </div>
-                </form>
+            <form action="/" 
+            name = 'contact-form'
+            method ='POST'
+            data-netlify = 'true'>
+                <input type="hidden" name="form-name" id= "contact-form" />
+                <input type ='text' name = 'name' placeholder = 'Enter your name...'></input>
+                <input type ='email' name = 'email' placeholder = 'Enter your email...'></input>
+                <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
+                <button type = 'submit'> Submit</button>
+            </form>   
+
 
             </div>
         </section>
