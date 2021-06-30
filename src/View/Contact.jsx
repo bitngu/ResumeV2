@@ -31,20 +31,25 @@ const Contact = () => {
             method ='POST'
             data-netlify = 'true'>
                 <input type="hidden" name="form-name" value = "contact-form" />
-                <div className="userName">
+                <div className="userInfo">
                     <h3>Name</h3>
-                    <input type ='text' name = 'name' placeholder = 'ENTER YOUR NAME*'></input>
+                    <input type ='text' name = 'name' placeholder = 'Your name...'></input>
                 </div>
-                <div className="userEmail">
+                <div className="userInfo">
                     <h3>Email</h3>
-                    <input type ='email' name = 'email' placeholder = 'ENTER YOUR EMAIL*'></input>
+                    <input type ='email' name = 'email' placeholder = 'Your email...'></input>
                 </div>
-                <div className="userPhone">
+                <div className="userInfo">
                     <h3>Phone Number</h3>
-                    <input type="number" name ='phone' placeholder = 'ENTER YOUR PHONE NUMBER...'/>
+                    <input type="number" name ='phone' placeholder = 'Your phone number...'/>
                 </div>
-                <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
-                <button type = 'submit'> Submit</button>
+                <div className="userInfo">
+                    <h3>Message</h3>
+                    <textarea name="message" placeholder = 'Your message...' cols="30" rows="10"></textarea>
+                </div>
+                <div className="submit-container">
+                    <button type = 'submit'> Send Message </button>
+                </div>
             </form>   
 
             </div>

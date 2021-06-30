@@ -65,8 +65,49 @@ div.submit-button:hover input {
     background-color: white;
     color: black;
 }
+.userInfo > h3 {
+    margin-bottom: 5px;
+}
 
+.userInfo > input {
+    width: 100%;
+    height: 25px;
+    border-top: solid;
+    border-left: solid;
+}
 
+.userInfo > textarea {
+    width: 100%;
+    font-family: serif;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-top: solid;
+    border-left: solid;
+}
+div.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.submit-container > button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+div.submit-container > button:hover {
+    background-color: white;
+    color: black;
+
+}
 
 
 /* div.field > * {
