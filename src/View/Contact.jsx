@@ -2,13 +2,12 @@ import logo from '../graphics/logo.png'
 import './Contact.css'
 const Contact = () => {
     const handleSubmit = (e) => {
-        e.preventDefault()
-        let myForm = document.getElementById('pizzaOrder');
-        let formData = new FormData(myForm)
+        e.preventDefault();
+        let myForm = document.getElementById('message').textContent;
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
+            body: myForm
         }).then(() => console.log('Form successfully submitted')).catch((error) =>
             alert(error))
     }
@@ -36,7 +35,7 @@ const Contact = () => {
                     </div>
                     <div className="field"> 
                         <h3>Message</h3>
-                        <textarea name="message" id="messsage" cols="30" rows="10" placeholder ='Your message...'></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'></textarea>
                     </div>
                     <div data-netlify-recaptcha = 'true'></div>
                     <div onClick = {handleSubmit}className = "submit-button">
