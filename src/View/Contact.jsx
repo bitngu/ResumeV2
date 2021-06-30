@@ -30,21 +30,25 @@ const Contact = () => {
                 netlify netlify-honeypot="bot-field" hidden>
                     <input type="hidden" name = 'form-name' value = 'contact-form'/>
                     <div className="field"> 
-                        <label> Name <input type="text" name ='name' placeholder = 'Your name...' /></label>
+                         <h3>Name</h3> 
+                         <input type="text" name ='name' placeholder = 'ENTER YOUR NAME*' />
                     </div>
                     <div className="field"> 
-                        <label> Email 
-                        <input type="email" name ='email' placeholder = 'Your Email...' />
-                        </label>
+                        <h3>Email</h3>  
+                        <input type="email" name ='email' placeholder = 'ENTER YOUR EMAIL*' />
+                    </div>
+                    <div className = 'field'> 
+                        <h3>Phone</h3>
+                        <input type="number" name ='phoneNumber' placeholder = 'PHONE NUMBER' />
+
                     </div>
                     <div className="field"> 
-                        <label> Message 
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'> </textarea>
-                        </label>
+                        <h3>Message</h3> 
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='YOUR MESSAGE*'> </textarea>
                     </div>
                     <div data-netlify-recaptcha = 'true'></div>
                     <div className = "submit-button">
-                        <button type="submit" value ='Send Message'/>
+                        <input type="submit" value ='Send Message'/>
                     </div>
                 </form>
 

@@ -31,7 +31,7 @@ div.title-contact  span {
     flex-direction: column;
 }
 div.contact-content {
-    width: 60%;
+    width: 40%;
     margin-left: 50px;
     margin-right: 50px;
 }
