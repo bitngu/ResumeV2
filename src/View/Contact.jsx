@@ -26,7 +26,7 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-            <form action="/" 
+            <form
             name = 'contact-form'
             method ='POST'
             data-netlify = 'true'>
@@ -35,7 +35,10 @@ const Contact = () => {
                     <h3>Name</h3>
                     <input type ='text' name = 'name' placeholder = 'ENTER YOUR NAME*'></input>
                 </div>
-                <input type ='email' name = 'email' placeholder = 'Enter your email...'></input>
+                <div className="userEmail">
+                    <h3>Email</h3>
+                    <input type ='email' name = 'email' placeholder = 'ENTER YOUR EMAIL*'></input>
+                </div>
                 <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
                 <button type = 'submit'> Submit</button>
             </form>   
