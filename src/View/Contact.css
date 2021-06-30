@@ -53,6 +53,7 @@ div.submit-button {
     transition: 0.5s;
 
 }
+
 div.submit-button:hover {
     background-color: white;
 }
@@ -79,6 +80,10 @@ div.submit-button:hover input {
     border-left: solid;
     font-size: 1.2rem;
 }
+div.contact-content span {
+    font-weight: 600;
+}
+
 
 .userInfo > textarea {
     width: 100%;

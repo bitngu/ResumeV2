@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #5D6A75;
+    justify-content: center;
+}
+
+div.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.footer-content > div {
+    margin-bottom: 0;
+}
+div.footer-content h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#network-footer > div {
+    border-radius: 30px;
+    padding: 15px;
+    border: solid #fff;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+div#rotate-logo1:hover > img, div#rotate-logo2:hover > img, div#rotate-logo3:hover > img {
+    animation: forward360 0.5s linear;
+}
+div#rotate-logo1 > img, div#rotate-logo2 > img, div#rotate-logo3 > img {
+    animation: reverse360 0.5s linear;
+}
+
+@keyframes forward360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:  rotate(359deg);
+    }
+}
+
+@keyframes reverse360 {
+    from {
+        transform:  rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+    
+}

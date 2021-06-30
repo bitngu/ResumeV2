@@ -38,7 +38,9 @@ const Navbar = () => {
             }
         }else if( to === 'contact'){
             if(windowX < 768){
-                window.scrollTo(0, 3250);
+                window.scrollTo(0, 3850);
+            }else{
+                windowX > 850 ? window.scrollTo(0, 3020) : window.scrollTo(0, 3815);
             }
         }
         // else {
