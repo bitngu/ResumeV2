@@ -114,9 +114,7 @@ const Navbar = () => {
     let texts = document.getElementById('navbar-menu').children;
     let scrollUp = document.getElementsByClassName('scrollUp-button')[0];
 
-    if (windowY < 75){
-        scrollUp.style.display = 'none';
-    }else if(windowY >= 75){
+    if(windowY >= 75){
         navbar.style.backgroundColor = 'white';
         name[0].style.color = 'black';
         scrollUp.style.display = 'block';
@@ -125,6 +123,7 @@ const Navbar = () => {
             hr[i].style.background = 'black';
         }
     }else{
+        scrollUp.style.display = 'none';
         navbar.style.backgroundColor = 'transparent';
         name[0].style.color =  'white';
         for (let i = 0; i < texts.length; i++) {
