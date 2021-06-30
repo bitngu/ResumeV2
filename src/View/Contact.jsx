@@ -26,8 +26,8 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-                <form id ='contact-form' method ="POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
-                netlify netlify-honeypot="bot-field" hidden>
+                <form id ='contact-form' method = "POST"  data-netlify = 'true' data-netlify-recaptcha="true" 
+                netlify netlify-honeypot="bot-field"> 
                     <input type="hidden" name = 'form-name' value= 'contact-form'/>
                     <div className="field"> 
                         <label> Name <input type="text" name ='name' placeholder = 'Your name...' /></label>
