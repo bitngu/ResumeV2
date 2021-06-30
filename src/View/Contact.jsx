@@ -26,7 +26,26 @@ const Contact = () => {
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
-                <form id ='contact-form' method ="POST"  data-netlify = 'true'  action ='' data-netlify-recaptcha="true" >
+        <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+            <label htmlFor="name">Name</label> <br />
+            <input type="text" id="name" name="name" required />
+        </p>
+        <p>
+            <label htmlFor="email">Email</label> <br />
+            <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+            <label htmlFor="message">Message</label> <br />
+            <textarea id="message" name="message" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit message" />
+        </p>
+        </form>
+                {/* <form id ='contact-form' method ="POST"  data-netlify = 'true'  action ='' data-netlify-recaptcha="true" 
+                netlify netlify-honeypot="bot-field" hidden>
                     <div className="field"> 
                         <h3>Name</h3>
                         <input type="text" name ='name' placeholder = 'Your name...' />
@@ -37,13 +56,13 @@ const Contact = () => {
                     </div>
                     <div className="field"> 
                         <h3>Message</h3>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...'></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder ='Your message...' value></textarea>
                     </div>
                     <div data-netlify-recaptcha = 'true'></div>
                     <div onClick = {handleSubmit}className = "submit-button">
                         <input type="submit" value ='Send Message'/>
                     </div>
-                </form>
+                </form> */}
 
             </div>
         </section>
