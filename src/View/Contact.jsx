@@ -27,7 +27,7 @@ const Contact = () => {
                     <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
 
-        <form name="contact v1" method="post" data-netlify = 'true' onSubmit = 'submit'>
+        <form name="contact v1" method="post" data-netlify = 'true' onSubmit = 'submit' netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact v1"/>
             <div>
                 <label >Name
