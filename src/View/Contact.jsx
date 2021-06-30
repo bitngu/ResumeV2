@@ -39,6 +39,10 @@ const Contact = () => {
                     <h3>Email</h3>
                     <input type ='email' name = 'email' placeholder = 'ENTER YOUR EMAIL*'></input>
                 </div>
+                <div className="userPhone">
+                    <h3>Phone Number</h3>
+                    <input type="number" name ='phone' placeholder = 'ENTER YOUR PHONE NUMBER...'/>
+                </div>
                 <textarea name="message" placeholder = 'Enter your message' cols="30" rows="10"></textarea>
                 <button type = 'submit'> Submit</button>
             </form>   
