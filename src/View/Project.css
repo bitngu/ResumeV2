@@ -3,8 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5D6A75;
-    filter: brightness(0.8);
+    background:linear-gradient(180deg, #cac2ad 15%, #d4c9ad)
 }
 
 div.title-projects {

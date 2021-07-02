@@ -8,10 +8,9 @@ import linkedin from '../graphics/linkedin-logo.png';
 import gmail from '../graphics/gmail-logo.png';
 
 const Home = () => {
-    const resumeLink = "https://drive.google.com/file/d/1wg_JzwpYyh458MbWdiNtgDC8jDus3Bk5/preview"
-
+    const resumeLink = "https://drive.google.com/file/d/1wg_JzwpYyh458MbWdiNtgDC8jDus3Bk5/view?usp=sharing"
     const handleOnClick = () => {
-        document.getElementById('about').scrollIntoView(true);
+        document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 
     }
     const displayCV = () => {
@@ -31,10 +30,7 @@ const Home = () => {
 
             <div className="intro">
                 <h2>Hi there, </h2>
-                <div className = 'who'> 
-                        <h1> I Am  <span className="text"></span> </h1>
-                        {/* <span className="text1"></span> */}
-                </div>
+                <h1> I Am  <span className="text"></span> </h1>
             </div>
             <div className= "socialnetwork">
                 <div onClick= {() => window.open('https://github.com/bitngu') }className="github">

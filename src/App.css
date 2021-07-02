@@ -5,3 +5,10 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+#about::before,#education::before, #project::before, #contact::before {
+    content: '';
+    display: block;
+    height:      50px;
+    visibility: hidden;
+}

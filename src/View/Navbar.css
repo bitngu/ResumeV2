@@ -126,11 +126,11 @@ div.dropdown-selection > div.dropdown-hr{
 }
 div.scrollUp-button {
     position: fixed;
-    bottom: 40px;
+    bottom: 25px;
     right: 20px;
     text-align: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: black;
     display: none;
 }

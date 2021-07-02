@@ -6,9 +6,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #5D6A75;
-    filter: brightness(0.8);
+    /* background-color: #5D6A75; */
+    /* filter: brightness(0.8); */
+    background: linear-gradient(180deg, #040506 15%, #b9a885);
 }
+
 
 div.title-about {
     margin-top: 25px;
@@ -21,6 +23,7 @@ div.title-about {
 div.title-about > h1 {
     font-weight: bolder;
     font-size: 2rem;
+    color: silver;
 }
 
 div.title-about span {
@@ -66,6 +69,8 @@ div.greetings {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    color: silver;
+
 }
 
 div.greetings > h1 {
@@ -80,6 +85,8 @@ div.greetings span {
 }
 div.info > p {
     text-align: justify;
+    font-weight: 600;
+    color: #fff;
 }
 
 section.skills {
@@ -88,6 +95,7 @@ section.skills {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 section.skills > h1 {
     font-size: 2rem;
@@ -217,3 +225,4 @@ div#seventy {width: 70%;}
         left: 93%;
     }
 }
+

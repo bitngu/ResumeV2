@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #5D6A75;
-    filter: brightness(0.8);
+    background:linear-gradient(180deg,#d4c9ad 15%, #eae5d9);
 }
 
 div.title-contact {

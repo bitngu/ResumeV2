@@ -17,96 +17,71 @@ const Navbar = () => {
 
     const handleOnClick = (e) => {
         let to = e.target.textContent.toLowerCase().trim()
-        console.log(to);
-
-        if (to === 'bi nguyen' || to === 'home'){
-            window.scrollTo(0,0);
-        }else if (to === 'about'){
-            windowX > 850 ? window.scrollTo(0, 675) : window.scrollTo(0, 520);
-        }else if (to === 'education'){
-            if (windowX < 768){
-                window.scrollTo(0, 1730);
-            }else{
-                windowX > 850 ? window.scrollTo(0, 1638) : window.scrollTo(0, 1435);
-            }
+        if(to === 'bi nguyen'){
+            window.scrollTo({top: 0, behavior: 'smooth'})
+        }else{document.getElementById(to).scrollIntoView({behavior: 'smooth'});}
+        
+        if(windowX <= 850){
+            document.getElementById('dropdown-menu').click();
         }
-        else if (to === 'project'){
-            if (windowX < 768){
-                window.scrollTo(0,2375);
-            }else {
-                windowX > 850 ? window.scrollTo(0, 2200) : window.scrollTo(0, 1980);
-            }
-        }else if( to === 'contact'){
-            if(windowX < 768){
-                window.scrollTo(0, 3850);
-            }else{
-                windowX > 850 ? window.scrollTo(0, 3020) : window.scrollTo(0, 3815);
-            }
-        }
-        // else {
-        //     document.getElementById(to).scrollIntoView(true);
-        // }
     }
-   
-
-    //show section as scroll
+    //show transition as changing height and width
    useEffect(() => {
-       if (windowX > 850){
+        const homeHeight = document.getElementById('home').clientHeight-50;
+        const aboutHeight = document.getElementById('about').clientHeight-50;
+        const eduHeight = document.getElementById('education').clientHeight-50;
+        const projHeight = document.getElementById('project').clientHeight-50;
+        console.log()
+        if (windowX > 850){
             document.getElementById('navhome_').style.width = '0';
             document.getElementById('navabout_').style.width = '0';
             document.getElementById('naveducation_').style.width = '0';
             document.getElementById('navproject_').style.width = '0';
             document.getElementById('navcontact_').style.width = '0';
-            
-        if (windowY < 675){
-            //home
-            document.getElementById('navhome_').style.width = 'inherit';
-            document.getElementById('navhome_').style.transform = 'scaleX(1.8)';
-            
-        }else if (windowY >= 675 && windowY < 1638){
-            //about
-            document.getElementById('navabout_').style.width = 'inherit';
-            document.getElementById('navabout_').style.transform = 'scaleX(1.8)';
-        }else if (windowY >= 1638 && windowY < 2200){
-            //education
-            document.getElementById('naveducation_').style.width = 'inherit';
-            document.getElementById('naveducation_').style.transform = 'scaleX(1.8)';
-       }else if ( windowY >= 2200 && windowY < 2600){
-            //project
-            document.getElementById('navproject_').style.width = 'inherit';
-            document.getElementById('navproject_').style.transform = 'scaleX(1.8)';
-        }else{
-            document.getElementById('navcontact_').style.width = 'inherit';
-            document.getElementById('navcontact_').style.transform = 'scaleX(1.8)';
-        }
+            if (windowY <= homeHeight) {
+                document.getElementById('navhome_').style.width = 'inherit';
+                document.getElementById('navhome_').style.transform = 'scaleX(1.8)';
+            }else if (windowY <= homeHeight + aboutHeight){
+                document.getElementById('navabout_').style.width = 'inherit';
+                document.getElementById('navabout_').style.transform = 'scaleX(1.8)';
 
+            }else if (windowY <= homeHeight + aboutHeight + eduHeight){
+                document.getElementById('naveducation_').style.width = 'inherit';
+                document.getElementById('naveducation_').style.transform = 'scaleX(1.8)';
+
+            }else if(windowY <= homeHeight + aboutHeight + eduHeight + projHeight ){
+                document.getElementById('navproject_').style.width = 'inherit';
+                document.getElementById('navproject_').style.transform = 'scaleX(1.8)';
+
+            }else{
+                document.getElementById('navcontact_').style.width = 'inherit';
+                document.getElementById('navcontact_').style.transform = 'scaleX(1.8)';
+
+            }
+   
     }else {
         document.getElementById('dropdownhome_').style.fontWeight = '300';
         document.getElementById('dropdownabout_').style.fontWeight = '300';
         document.getElementById('dropdowneducation_').style.fontWeight = '300';
         document.getElementById('dropdownproject_').style.fontWeight = '300';
         document.getElementById('dropdowncontact_').style.fontWeight = '300';
-        if (windowY < 520 ) {
-            //home
+        if (windowY <= homeHeight ) {
             document.getElementById('dropdownhome_').style.fontWeight = '600';
         }
-        else if (windowY >= 520 && windowY < 1435){
-            //about
+        else if (windowY <= homeHeight + aboutHeight){
             document.getElementById('dropdownabout_').style.fontWeight = '600';
-
-        }else if (windowY >= 1435 && windowY < 1980){
+        }else if (windowY <= homeHeight + aboutHeight + eduHeight ){
             document.getElementById('dropdowneducation_').style.fontWeight = '600';
-        }else if( windowY >= 1980 && windowY < 3300){
+        }else if( windowY <= homeHeight + aboutHeight + eduHeight + projHeight){
             document.getElementById('dropdownproject_').style.fontWeight = '600';
         }else {
             document.getElementById('dropdowncontact_').style.fontWeight = '600';
-
         }
     }
-
-
    }, [windowY, windowX])
-   //change color as scroll
+
+
+   //change color of navbar as scroll
    useEffect (()=>{
     let navbar = document.getElementsByClassName('navbar')[0];
     let name =  document.getElementsByClassName('name')[0].children;
@@ -130,6 +105,7 @@ const Navbar = () => {
             texts[i].style.color = 'white';
             hr[i].style.background = 'white';
         }
+        
         }
    }, [windowY])
 
@@ -147,6 +123,7 @@ const Navbar = () => {
            setIsToggle(true);
         }
    }
+
 
    //reset drop-down menu;
    useEffect (()=> {
@@ -203,7 +180,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div onClick = {() => window.scrollTo(0,0)} className="scrollUp-button">
+            <div onClick = {() => window.scrollTo({top:0, behavior: 'smooth'})} className="scrollUp-button">
                 <img src={upArrow} alt= "^" />
             </div>
         </nav>

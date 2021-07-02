@@ -21,7 +21,7 @@ const Education = () => {
                                  <span> Minor in Computer Science  </span>
                         </div>
                         <div className="experience">
-                            <h4><span className='circle-dot' id = 'dot2'></span>March 2021 - Present</h4>
+                            <h4><span className='circle-dot' id = 'dot2'></span>March 2021 - June 2021</h4>
                             <h3> Data Analyst Intern </h3>
                             <p> Wrote an R script to test the accuracy of the Solr search engine using 
                                 research documents from government databases </p>

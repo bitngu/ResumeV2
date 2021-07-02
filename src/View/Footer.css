@@ -2,7 +2,7 @@ footer {
     display: flex;
     align-items: center;
     height: 150px;
-    background-color: #5D6A75;
+    background-color: #fffdf9;
     justify-content: center;
 }
 
@@ -18,14 +18,16 @@ div.footer-content > div {
 div.footer-content h3 {
     margin-top: 20px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 #network-footer > div {
     border-radius: 30px;
-    padding: 15px;
-    border: solid #fff;
+    padding: 10px;
+    border: solid #000;
     margin-right: 30px;
     overflow: hidden;
+    text-align: center;
 }
 
 div#rotate-logo1:hover > img, div#rotate-logo2:hover > img, div#rotate-logo3:hover img {
@@ -52,4 +54,11 @@ div#rotate-logo1 > img, div#rotate-logo2 > img, div#rotate-logo3 img {
         transform: rotate(0deg);
     }
     
+}
+
+@media (max-width: 600px){
+    div.contact-content {
+        width: 60%;
+    }
+
 }

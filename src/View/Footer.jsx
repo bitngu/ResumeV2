@@ -1,7 +1,7 @@
 import './Footer.css';
-import github from '../graphics/github-logo.png';
-import linkedin from '../graphics/linkedin-logo.png';
-import gmail from '../graphics/gmail-logo.png';
+import github from '../graphics/github-logo-black.png';
+import linkedin from '../graphics/linkedin-logo-black.png';
+import gmail from '../graphics/gmail-logo-black.png';
 
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <h3> &copy; 2021 Bi Nguyen. All Rights Reserved</h3>
+                <h3> &copy; 2021 by Bi Nguyen. All Rights Reserved</h3>
                 
             </div>
         </footer>

@@ -15,7 +15,7 @@ const Projects = () => {
     return (  
         <section id = 'project'>
             <div className="title-projects">
-                <h1> My <span>Projects </span> </h1>
+                <h1> <span>Projects </span> </h1>
                 <div className="logo">
                     <img src={logo} alt= "" />
                 </div>

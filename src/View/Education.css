@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     background-color: #5D6A75;
-    filter: brightness(0.8);
+
+    background: linear-gradient(180deg, #b9a885 15%, #cac2ad);
 }
 
 div.title-education{
