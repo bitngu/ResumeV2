@@ -229,7 +229,12 @@ div.display-resume {
 }
 
 @media (max-width: 850px){
-
+  section#home {
+    min-height: 85vh;
+  }
+  div.background-img {
+    height: 85%;
+  }
   div.intro > h2{
     font-size: 1.8rem;
 

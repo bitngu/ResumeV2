@@ -27,7 +27,7 @@ const Navbar = () => {
     }
     //show transition as changing height and width
    useEffect(() => {
-        const homeHeight = document.getElementById('home').clientHeight;
+        const homeHeight = document.getElementById('home').clientHeight-50;
         const aboutHeight = document.getElementById('about').clientHeight;
         const eduHeight = document.getElementById('education').clientHeight;
         const projHeight = document.getElementById('project').clientHeight;

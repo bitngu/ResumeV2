@@ -2,12 +2,10 @@
     /* height: 500px; */
     height: auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* background-color: #5D6A75; */
-    /* filter: brightness(0.8); */
+    align-items: center; */
     background: linear-gradient(180deg, #040506 15%, #b9a885);
 }
 
