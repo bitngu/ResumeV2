@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo({top: 0, behavior: 'smooth'})
         }else{document.getElementById(to).scrollIntoView({behavior: 'smooth'});}
         
-        if(windowX <= 850 && to != 'bi nguyen'){
+        if(windowX <= 850 && to !== 'bi nguyen'){
             document.getElementById('dropdown-menu').click();
         }
     }
