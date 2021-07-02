@@ -230,7 +230,8 @@ div.display-resume {
 
 @media (max-width: 850px){
   section#home {
-    min-height: 85vh;
+    /* min-height: 85vh; */
+    background-color: black;
   }
   div.background-img {
     height: 85%;
