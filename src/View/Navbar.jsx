@@ -21,16 +21,16 @@ const Navbar = () => {
             window.scrollTo({top: 0, behavior: 'smooth'})
         }else{document.getElementById(to).scrollIntoView({behavior: 'smooth'});}
         
-        if(windowX <= 850){
+        if(windowX <= 850 && to != 'bi nguyen'){
             document.getElementById('dropdown-menu').click();
         }
     }
     //show transition as changing height and width
    useEffect(() => {
-        const homeHeight = document.getElementById('home').clientHeight-50;
-        const aboutHeight = document.getElementById('about').clientHeight-50;
-        const eduHeight = document.getElementById('education').clientHeight-50;
-        const projHeight = document.getElementById('project').clientHeight-50;
+        const homeHeight = document.getElementById('home').clientHeight;
+        const aboutHeight = document.getElementById('about').clientHeight;
+        const eduHeight = document.getElementById('education').clientHeight;
+        const projHeight = document.getElementById('project').clientHeight;
         console.log()
         if (windowX > 850){
             document.getElementById('navhome_').style.width = '0';
