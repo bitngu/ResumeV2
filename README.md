@@ -1,4 +1,4 @@
 # Resume
 
-A React web application for personal website or portfolio
+A React web application for my personal website or portfolio
 
