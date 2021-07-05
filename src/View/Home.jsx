@@ -8,7 +8,7 @@ import linkedin from '../graphics/linkedin-logo.png';
 import gmail from '../graphics/gmail-logo.png';
 
 const Home = () => {
-    const resumeLink = "https://drive.google.com/file/d/1wg_JzwpYyh458MbWdiNtgDC8jDus3Bk5/view?usp=sharing"
+    const resumeLink = "https://drive.google.com/file/d/1IR1shVNIYqc5v4UZWcGvjM86xuNnZjj8/view?usp=sharing"
     const handleOnClick = () => {
         console.log('click to about')
         document.getElementById('about').scrollIntoView({behavior: 'smooth'});
