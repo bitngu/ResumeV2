@@ -11,4 +11,6 @@ button:focus {
     display: block;
     height:50px;
     visibility: hidden;
+    background-color: black;
+    background: black;
 }
