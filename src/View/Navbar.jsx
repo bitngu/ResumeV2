@@ -9,10 +9,6 @@ import './Navbar.css'
 const Navbar = () => {
    let windowY = useOnScroll();
    let windowX = useOnResize();
-
-   console.log('y', windowY);
-   console.log('x', windowX);
-   
    const [isToggle, setIsToggle] = useState(false);
 
     const handleOnClick = (e) => {

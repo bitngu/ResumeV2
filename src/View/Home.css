@@ -229,13 +229,13 @@ div.display-resume {
 }
 
 @media (max-width: 850px){
-  section#home {
+  /* section#home {
     min-height: 85vh;
     background-color: black;
-  }
-  div.background-img {
+  } */
+  /* div.background-img {
     height: 85%;
-  }
+  } */
   div.intro > h2{
     font-size: 1.8rem;
 
