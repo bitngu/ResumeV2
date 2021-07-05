@@ -135,6 +135,7 @@ div.resume{
   color: white;
   background-color: transparent;
   transition: 1s;
+  z-index: 1;
 }
 
 
