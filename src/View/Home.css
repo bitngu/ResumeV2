@@ -19,7 +19,7 @@ div.background-img {
     bottom: 0;    
     display: flex;
     justify-content: center;
-    z-index: -1;
+    background-color: black;
 }    
 
 div.background-img > img {
@@ -27,6 +27,8 @@ div.background-img > img {
     height: 100%;
     filter: brightness(50%);
     object-fit: cover;
+    z-index: -1;
+
     
 }
 

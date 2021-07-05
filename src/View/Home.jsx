@@ -10,6 +10,7 @@ import gmail from '../graphics/gmail-logo.png';
 const Home = () => {
     const resumeLink = "https://drive.google.com/file/d/1wg_JzwpYyh458MbWdiNtgDC8jDus3Bk5/view?usp=sharing"
     const handleOnClick = () => {
+        console.log('click to about')
         document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 
     }
@@ -44,12 +45,8 @@ const Home = () => {
                         <img src = {gmail} alt="github-logo" />
                     </a>
                 </div>
-                
             </div>
-
-            <div onClick = {displayCV} className="resume">
-                View Resume
-            </div>
+            <div onClick = {displayCV} className="resume"> View Resume </div>
 
         </section>
     );
