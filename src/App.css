@@ -6,6 +6,11 @@ button:focus {
     outline: none;
 }
 
+
+.App > section {
+    position: relative;
+}
+
 #about::before,#education::before, #project::before, #contact::before {
     content: '';
     display: block;
