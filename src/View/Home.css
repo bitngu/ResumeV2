@@ -19,7 +19,7 @@ div.background-img {
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top: 75px;    
+    /* margin-top: 75px;     */
 }    
 
 div.background-img > img {
@@ -101,46 +101,6 @@ span.text:before {
     }
   }
 
-  /* span.text1:before {
-    content:'';
-    animation: fade1 30s infinite;
-  }
-  
-  
-  @keyframes fade1 {
-    0%{
-      content: ' Nguyen';
-      opacity: 1
-    }
-    10% {
-      opacity: 0;
-    }
-    30% {
-      content: ' Student';
-      opacity: 1;
-    }
-    
-    40% {
-      opacity: 0;
-    }
-    60% {
-      content: ' Developer';
-      opacity: 1;
-    }
-    70% {
-      opacity: 0;
-    }
-    
-    90% {
-      content: ' Nguyen';
-      opacity: .8;
-    }
-    
-    100% {
-      content: ' Nguyen';
-      opacity: 1;
-    }
-  } */
 
   div.socialnetwork {
     display: flex;
@@ -240,10 +200,16 @@ div.display-resume {
 }
 
 
-/* @media (max-width: 525px){
+@media (max-width: 525px){
   div.who > h1 {
     position: relative;
     margin-top: 20px;
   }
+}
 
-} */
+@media (max-width: 850px){
+  section#home, div.background-img {
+    height: 80vh;
+    }
+
+}

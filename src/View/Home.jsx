@@ -26,6 +26,7 @@ const Home = () => {
                 <div onClick = {handleOnClick} className="move-down">
                     <img src={downArrow} alt= "v" />
                 </div>
+
             </div>
             <Navbar />
 
@@ -47,7 +48,7 @@ const Home = () => {
                 </div>
             </div>
             <div onClick = {displayCV} className="resume"> View Resume </div>
-
+            
         </section>
     );
 }
