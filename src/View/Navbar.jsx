@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useOnScroll from '../utils/useOnScroll';
 import useOnResize from '../utils/useOnResize';
 import upArrow from '../graphics/up-arrow.png';
+
 // import iconWhite from '../graphics/icon-white.png'
 // import icon from '../graphics/icon.png'
 
@@ -10,14 +11,12 @@ const Navbar = () => {
    let windowY = useOnScroll();
    let windowX = useOnResize();
    const [isToggle, setIsToggle] = useState(false);
+  
 
     const handleOnClick = (e) => {
         let to = e.target.textContent.toLowerCase().trim()
-        if(to === 'bi nguyen'){
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }else{document.getElementById(to).scrollIntoView({behavior: 'smooth'});}
-        
-        if(windowX <= 850 && to !== 'bi nguyen'){
+        document.getElementById(to).scrollIntoView({behavior: 'smooth'});
+        if(windowX <= 850){
             document.getElementById('dropdown-menu').click();
         }
     }
@@ -27,13 +26,14 @@ const Navbar = () => {
         const aboutHeight = document.getElementById('about').clientHeight;
         const eduHeight = document.getElementById('education').clientHeight;
         const projHeight = document.getElementById('project').clientHeight;
-        console.log()
+
         if (windowX > 850){
             document.getElementById('navhome_').style.width = '0';
             document.getElementById('navabout_').style.width = '0';
             document.getElementById('naveducation_').style.width = '0';
             document.getElementById('navproject_').style.width = '0';
             document.getElementById('navcontact_').style.width = '0';
+
             if (windowY <= homeHeight) {
                 document.getElementById('navhome_').style.width = 'inherit';
                 document.getElementById('navhome_').style.transform = 'scaleX(1.8)';
@@ -61,6 +61,8 @@ const Navbar = () => {
         document.getElementById('dropdowneducation_').style.fontWeight = '300';
         document.getElementById('dropdownproject_').style.fontWeight = '300';
         document.getElementById('dropdowncontact_').style.fontWeight = '300';
+
+
         if (windowY <= homeHeight ) {
             document.getElementById('dropdownhome_').style.fontWeight = '600';
         }
@@ -76,34 +78,44 @@ const Navbar = () => {
     }
    }, [windowY, windowX])
 
-
    //change color of navbar as scroll
    useEffect (()=>{
     let navbar = document.getElementsByClassName('navbar')[0];
-    let name =  document.getElementsByClassName('name')[0].children;
     let hr = document.getElementsByClassName('navbar-hr');
     let texts = document.getElementById('navbar-menu').children;
     let scrollUp = document.getElementsByClassName('scrollUp-button')[0];
 
     if(windowY >= 75){
         navbar.style.backgroundColor = 'white';
-        name[0].style.color = 'black';
         scrollUp.style.display = 'block';
         for (let i = 0; i < texts.length; i++) {
             texts[i].style.color = 'black';
-            hr[i].style.background = 'black';
+            hr[i].style.background = '#000';
         }
     }else{
         scrollUp.style.display = 'none';
         navbar.style.backgroundColor = 'transparent';
-        name[0].style.color =  'white';
         for (let i = 0; i < texts.length; i++) {
-            texts[i].style.color = 'white';
-            hr[i].style.background = 'white';
+            texts[i].style.color = '#fff';
+            hr[i].style.background = '#fff';
         }
         
         }
    }, [windowY])
+
+   useEffect (()=>{
+        let container =  document.getElementsByClassName('nav-logo-container')[0];
+        if (windowX <= 850){
+            container.style.color = '#000';
+        }else if (windowX > 850 && windowY >= 75){
+            container.style.color = '#000'
+        }else{
+            container.style.color = '#fff';
+        }
+    
+
+   }, [windowX, windowY])
+
 
    const rotateAnimate = (e) => {      
        e.target.classList.toggle('rotate');
@@ -114,8 +126,8 @@ const Navbar = () => {
 
        }
         else{
-           document.getElementsByClassName('overlay')[0].style.height = '225px';
-           document.getElementsByClassName('dropdown-selection')[0].style.height = '225px';
+           document.getElementsByClassName('overlay')[0].style.height = '200px';
+           document.getElementsByClassName('dropdown-selection')[0].style.height = '200px';
            setIsToggle(true);
         }
    }
@@ -130,8 +142,13 @@ const Navbar = () => {
 
     return (  
         <nav className="navbar">
-            <div className="name">
-                <h1 onClick = {handleOnClick}>Bi Nguyen</h1>
+            <div onClick = {() => window.scrollTo({top:0, behavior: 'smooth'})} className= "nav-logo-container">
+                <div className="nav-logo">
+                    &#123;...&#125;
+                    <span>Bi Nguyen</span>
+                    <p>Software Engineer</p>
+                </div>
+         
             </div>
             <div id="navbar-menu">
                 <div className="outerText">

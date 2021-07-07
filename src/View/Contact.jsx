@@ -1,4 +1,3 @@
-import logo from '../graphics/logo.png'
 import './Contact.css'
 const Contact = () => {
     // const handleSubmit = (e) => {
@@ -18,8 +17,10 @@ const Contact = () => {
         <section id ="contact">
             <div className="title-contact">
                 <h1> Get in <span>Contact</span></h1>
-                <div className="logo" id = 'about-logo'>
-                    <img src={logo} alt= "website-logo" />
+                <div className="divider">
+                    <div className="hr-divider"></div>
+                    <span> * </span>
+                    <div className="hr-divider"></div>
                 </div>
             </div>
             <div className="contact-content">

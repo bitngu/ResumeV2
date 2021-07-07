@@ -1,11 +1,9 @@
-import logo from '../graphics/logo.png'
 import tractivity from '../graphics/tractivity.png'
 import jsLogo from '../graphics/js-logo.png' 
 import htmlLogo from '../graphics/html5-logo.png' 
 import cssLogo from '../graphics/css3-logo.png' 
 import nodeLogo from '../graphics/node-logo.png'
 import reactLogo from '../graphics/react-logo.png'
-import jupyterLogo from '../graphics/jupyter-logo.png'
 import pythonLogo from '../graphics/python-logo.png'
 import seleniumLogo from '../graphics/selenium-logo.png'
 import avltree from '../graphics/avltree.png'
@@ -27,9 +25,11 @@ const Projects = () => {
     return (  
         <section id = 'project'>
             <div className="title-projects">
-                <h1> <span>Projects </span> </h1>
-                <div className="logo">
-                    <img src={logo} alt= "resume-logo" />
+                <h1> Past <span> Projects </span> </h1>
+                <div className="divider">
+                    <div className="hr-divider"></div>
+                    <span> * </span>
+                    <div className="hr-divider"></div>
                 </div>
             </div>
             <div className="project-row">
@@ -120,7 +120,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className="project-row">
                 <div className="project-content" > 
                     <div className="project-img-container">
@@ -182,7 +182,7 @@ const Projects = () => {
                         <div className="create-with">
                             <div className= "logos-container">
                                 <h4>Created using: </h4>
-                                <img className = 'adjust' src= {jupyterLogo} alt="Python Logo" />
+                                <img src= {pythonLogo} alt="Python Logo" />
                                 <img src={seleniumLogo} alt="CSS3 Logo" />
                             </div>
                             <p> Analyzed the behavior of gamers in different chat forum of the popular game, League of Legends using

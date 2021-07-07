@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background:linear-gradient(180deg,#d4c9ad 15%, #eae5d9);
+    /* background:linear-gradient(180deg,#d4c9ad 15%, #eae5d9); */
+    background-color: #f5f5f5;
 }
 
 div.title-contact {
@@ -29,6 +30,11 @@ div.title-contact  span {
     align-items: center;
     flex-direction: column;
 }
+
+.userInfo > input, textarea {
+    padding-left: 5px;
+}
+
 div.contact-content {
     width: 40%;
     margin-left: 50px;

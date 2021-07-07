@@ -75,7 +75,7 @@ span.text:before {
       opacity: 0;
     }
     30% {
-      content: 'A Student';
+      content: 'A Student.';
       opacity: 1;
     }
     
@@ -83,7 +83,7 @@ span.text:before {
       opacity: 0;
     }
     60% {
-      content: 'A Developer';
+      content: 'A Developer.';
       opacity: 1;
     }
     70% {
@@ -91,12 +91,12 @@ span.text:before {
     }
     
     90% {
-      content: 'Bi Nguyen';
+      content: 'Bi Nguyen.';
       opacity: .8;
     }
     
     100% {
-      content: 'Bi Nguyen';
+      content: 'Bi Nguyen.';
       opacity: 1;
     }
   }
