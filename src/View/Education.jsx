@@ -10,8 +10,6 @@ import cLogo from '../graphics/clogo.png'
 import javaLogo from '../graphics/javaLogo.png'
 import gitLogo from '../graphics/gitLogo.png'
 import rLogo from '../graphics/rLogo.png'
-
-
 import './Education.css'
 
 const Education = () => {

@@ -24,13 +24,18 @@ const About = () => {
                         <h1>I'm <span>Bi Nguyen.</span></h1>
                     </div>
 
-                    <p>I am an aspiring Software Engineer. I took an interest in Computer Science while studying Statistics at UC Davis. 
-                    I enjoy the creativity that revolves around programming. With programming, 
-                    I can develop games, websites and solve problems. 
-                    The versality of coding allows you to get creative because there is no one way to solve a problem.
-                    I have been trying to improve my skills and knowledge
-                    in programming by taking the upper division Computer Science courses offered at 
-                    UC Davis and taking online classes offered at Udemy.</p>
+                    <p>I am an aspiring Software Engineer. I took an interest in Computer Science while studying Statistics at UC Davis.
+                    I remember when I first took my Intro to Programming course, I thought it was the hardest thing. 
+                    The logic, the syntax, the structure... everything was too overwhelming. So I failed. I thought about
+                    not retaking the class because it was a nightmare. But eventually, I gave it another try and worked harder,
+                    practiced more. It wasn't until the final project for the class where I developed my passion for Computer Science.
+                    The project was to implement a text-based version of the game Battleship.      
+                    I worked hours on end implementing, debugging, and attending office hours.
+                    When I finally completed the project, I felt incredible joy and happiness. 
+                    I knew that this was something that I want to do in the future - implementing, designing, and testing 
+                    "large" scale project(s). Since then, I have been trying to improve my skills and knowledge
+                    in Computer Science by taking upper-division CS courses offered at 
+                    UC Davis and online classes offered at Udemy.</p>
                 </div>
             </div>
 
