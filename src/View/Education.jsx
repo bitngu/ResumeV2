@@ -36,7 +36,7 @@ const Education = () => {
                         </div>
                         <div className="experience">
                             <h4><span className='circle-dot' id = 'dot2'></span>March 2021 - June 2021</h4>
-                            <h3> Data Analyst Intern </h3>
+                            <h3> Data Science Intern - UC Davis DataLab</h3>
                             <p> Wrote an R script to test the accuracy of the Solr search engine using 
                                 research documents from government databases </p>
                             <span> Documented, tested and debugged Java code for production </span>
