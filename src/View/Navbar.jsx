@@ -6,9 +6,6 @@ import upArrow from '../graphics/up-arrow.png';
 // import iconWhite from '../graphics/icon-white.png'
 // import icon from '../graphics/icon.png'
 
-import icon from '../graphics/cs-logo-1.png'
-
-
 
 import './Navbar.css'
 const Navbar = () => {
