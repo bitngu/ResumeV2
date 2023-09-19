@@ -60,49 +60,83 @@ div.intro > h1 {
 }
 
 span.text:before {
-    content:"Bi Nguyen";
-    animation: fade 30s infinite;
-    -o-animation: fade 30s infinite;
-    -moz-animation: fade 30s infinite;    
-  }
-  
-  
-  @keyframes fade{
-    0%{
-      opacity: 1
+    content: "Developer.";
+    animation: fade 15s infinite;
+    -o-animation: fade 15s infinite;
+    -moz-animation: fade 15s infinite;
+}
+
+span.text:before {
+    content: "Developer.";
+    animation: fade 15s infinite;
+    -o-animation: fade 15s infinite;
+    -moz-animation: fade 15s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
     }
-    10% {
-      opacity: 0;
+
+    8.33% {
+        opacity: 1;
+        content: "Developer.";
     }
-    30% {
-      content: 'A Student.';
-      opacity: 1;
+
+    18.33% {
+        opacity: 1;
+        content: "Developer.";
     }
-    
-    40% {
-      opacity: 0;
+
+    26.67% {
+        opacity: 0;
+        content: "Developer.";
     }
-    60% {
-      content: 'A Developer.';
-      opacity: 1;
+
+    28.33% {
+        opacity: 0;
+        content: "Test Engineer.";
     }
-    70% {
-      opacity: 0;
+
+    38.33% {
+        opacity: 1;
+        content: "Test Engineer.";
     }
-    
-    90% {
-      content: 'Bi Nguyen.';
-      opacity: .8;
+
+    48.33% {
+        opacity: 1;
+        content: "Test Engineer.";
     }
-    
+
+    56.67% {
+        opacity: 0;
+        content: "Test Engineer.";
+    }
+
+    58.33% {
+        opacity: 0;
+        content: "Quality Engineer.";
+    }
+
+    68.33% {
+        opacity: 1;
+        content: "Quality Engineer.";
+    }
+
+    78.33% {
+        opacity: 1;
+        content: "Quality Engineer.";
+    }
+
     100% {
-      content: 'Bi Nguyen.';
-      opacity: 1;
+        opacity: 0;
+        content: "Quality Engineer.";
     }
-  }
+}
 
 
-  div.socialnetwork {
+
+div.socialnetwork {
     display: flex;
     position: relative;
     margin-bottom: 40px;
@@ -146,7 +180,7 @@ div.resume:hover {
 
 
 div.move-down {
-  position: absolute;
+    position: absolute;
     bottom: 0;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -160,6 +194,7 @@ div.move-down {
     height: 30px;
     margin-bottom: 20px;
     text-align: center;
+    transition: 0.3s ease-in;
 }
 
 div.move-down > img {
@@ -168,6 +203,32 @@ div.move-down > img {
     position: relative;
     top: 10px;
 }
+
+div.move-down:hover {
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+div.move-down img:nth-child(2){
+    display: none;
+    visibility: hidden;
+}
+
+div.move-down:hover img:nth-child(2){
+    display: block;
+    visibility: visible;
+    align-items: center;
+    left: 6px;
+}
+
+div.move-down:hover img:nth-child(1) {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+
 
 @keyframes bounce {
   0%, 30%,60%,100% {bottom: 0px;}

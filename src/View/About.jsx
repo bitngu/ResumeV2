@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../graphics/profile.jpeg'
+import profile from '../graphics/profile2.jpg'
 
 import './About.css'
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
                 </div>
             </div>
 
-      
+
 
         </section>
     );

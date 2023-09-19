@@ -6,6 +6,10 @@ import upArrow from '../graphics/up-arrow.png';
 // import iconWhite from '../graphics/icon-white.png'
 // import icon from '../graphics/icon.png'
 
+import icon from '../graphics/cs-logo-1.png'
+
+
+
 import './Navbar.css'
 const Navbar = () => {
    let windowY = useOnScroll();
@@ -84,37 +88,51 @@ const Navbar = () => {
     let hr = document.getElementsByClassName('navbar-hr');
     let texts = document.getElementById('navbar-menu').children;
     let scrollUp = document.getElementsByClassName('scrollUp-button')[0];
-
-    if(windowY >= 75){
-        navbar.style.backgroundColor = 'white';
+    let container =  document.getElementsByClassName('nav-logo-container')[0];
+    let home_section_height = document.getElementById('home').offsetHeight - 25;
+    let dropdown_menu = document.getElementById("dropdown-menu");
+    if(windowY >= home_section_height){
+        navbar.style.backgroundColor = '#fff';
+        container.style.color = '#000';
+        // dropdown_menu.style.background = '#000';
         scrollUp.style.display = 'block';
         for (let i = 0; i < texts.length; i++) {
-            texts[i].style.color = 'black';
+            texts[i].style.color = '#000';
             hr[i].style.background = '#000';
+        }
+        for (let i = 0; i < dropdown_menu.children.length; i++) {
+            dropdown_menu.children[i].style.background = "#000";
         }
     }else{
         scrollUp.style.display = 'none';
         navbar.style.backgroundColor = 'transparent';
+        container.style.color = '#fff'
+        // dropdown_menu.style.background = '#fff';
+
         for (let i = 0; i < texts.length; i++) {
             texts[i].style.color = '#fff';
             hr[i].style.background = '#fff';
         }
-        
+        for (let i = 0; i < dropdown_menu.children.length; i++) {
+            dropdown_menu.children[i].style.background = "#fff";
         }
+    }
+    let isVisibleOverlay = document.getElementsByClassName("dropdown-selection")[0].offsetHeight > 0;
+    if (isVisibleOverlay){
+        let dropdown_menu_options = document.getElementsByClassName("dropdown-selection")[0]
+        if(windowY >= home_section_height) {
+            for (let i = 0; i < dropdown_menu_options.children.length; i++) {
+                dropdown_menu_options.children[i].style.color = "#000";
+            }
+        }
+        else {
+            for (let i = 0; i < dropdown_menu_options.children.length; i++) {
+                dropdown_menu_options.children[i].style.color = "#fff";
+            }
+        }
+    }
+
    }, [windowY])
-
-   useEffect (()=>{
-        let container =  document.getElementsByClassName('nav-logo-container')[0];
-        if (windowX <= 850){
-            container.style.color = '#000';
-        }else if (windowX > 850 && windowY >= 75){
-            container.style.color = '#000'
-        }else{
-            container.style.color = '#fff';
-        }
-    
-
-   }, [windowX, windowY])
 
 
    const rotateAnimate = (e) => {      
@@ -126,8 +144,8 @@ const Navbar = () => {
 
        }
         else{
-           document.getElementsByClassName('overlay')[0].style.height = '200px';
-           document.getElementsByClassName('dropdown-selection')[0].style.height = '200px';
+           document.getElementsByClassName('overlay')[0].style.height = '300px';
+           document.getElementsByClassName('dropdown-selection')[0].style.height = '300px';
            setIsToggle(true);
         }
    }
@@ -138,15 +156,31 @@ const Navbar = () => {
        if(isToggle && windowX > 850){
            document.getElementById('dropdown-menu').click();
         }
-   }, [windowX, isToggle])
+       if(windowX <= 850){
+           let home_section_height = document.getElementById('home').offsetHeight - 25;
+           let dropdown_menu_options = document.getElementsByClassName("dropdown-selection")[0].querySelectorAll('h2')
+           let hr_line = [...document.getElementsByClassName("dropdown-hr")]
+           if(windowY >= home_section_height) {
+               dropdown_menu_options.forEach((menu)=>{menu.style.color = '#000'})
+               hr_line.forEach((hr) => {hr.style.background = "black"})
+           }
+           else {
+               dropdown_menu_options.forEach((menu)=>{menu.style.color = '#fff'})
+               hr_line.forEach((hr) => {hr.style.background = "white"})
+           }
+       }
+   }, [windowX, windowY, isToggle])
 
     return (  
         <nav className="navbar">
             <div onClick = {() => window.scrollTo({top:0, behavior: 'smooth'})} className= "nav-logo-container">
                 <div className="nav-logo">
-                    &#123;...&#125;
-                    <span>Bi Nguyen</span>
-                    <p>Software Engineer</p>
+                    <span> Bi Nguyen </span>
+                    <p></p>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Handlee');
+                    </style>
+
                 </div>
          
             </div>
@@ -186,7 +220,6 @@ const Navbar = () => {
                     <div className= 'dropdown-hr'></div>
                     <h2 id = 'dropdowneducation_' onClick = {handleOnClick} > Education </h2>
                     <div className= 'dropdown-hr'></div>
-
                     <h2 id = 'dropdownproject_' onClick = {handleOnClick} > Project</h2>
                     <div className= 'dropdown-hr'></div>
                     <h2 id = 'dropdowncontact_' onClick = {handleOnClick} > Contact</h2>

@@ -32,13 +32,17 @@ div.name > h1:hover {
     align-items: center;
     position: fixed;
     right: 60px;
-    
 }
+
 #navbar-menu h2 {
     font-size: 1rem;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+#navbar-menu h2:hover{
+    cursor: pointer;
+}
+
 
 .outerText{
     margin-right: 20px;
@@ -48,8 +52,6 @@ div.name > h1:hover {
     display: flex;
     justify-content: center;
 }
-
-
 
 div.navbar-hr {
     width: 0;
@@ -99,34 +101,6 @@ div.bar1, div.bar2, div.bar3 {
     transform: rotate(45deg) translate(-9px, -10px);
   }
 
-div.overlay {
-    width: 100%;
-    height: 0px;
-    background-color: white;
-    transition: height .5s;
-    position: absolute;
-    top: 75px;
-    display: none;
-}
-div.dropdown-selection {
-    height: 0;
-    overflow: hidden;
-    transition: height .5s;
-}
-div.dropdown-selection > h2 {
-    position: relative;
-    left: 50px;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-div.dropdown-selection > div.dropdown-hr{
-    width: 100%;
-    height: 0.5px;
-    background-color: black;
-}
 div.scrollUp-button {
     position: fixed;
     bottom: 25px;
@@ -160,15 +134,49 @@ div.nav-logo {
 
 div.nav-logo > span {
     padding-left: 5px;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+    font-family: 'Handlee', cursive;
+
 }
 div.nav-logo > p {
     font-size: 1.25rem;
 }
+div.overlay {
+    width: 180px;
+    background-color: transparent;
+    transition: height .5s;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    display: none;
+}
+div.dropdown-selection {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+}
+div.dropdown-selection > h2 {
+    position: relative;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
 
+div.dropdown-selection > div.dropdown-hr{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: 20px;
+    background-color: white;
+}
 
-
-
+div.dropdown-selection > h2:hover{
+    cursor: pointer;
+    font-weight: 600 !important;
+}
 
 @media (max-width: 850px) {
     div#dropdown-menu {
@@ -176,21 +184,21 @@ div.nav-logo > p {
         position: fixed;
         right: 50px;
     }
+    div#dropdown-menu:hover{
+        cursor: pointer;
+    }
+
     div#navbar-menu {
         display: none;
     }
     div.overlay {
         display: initial;
     }
-
-    nav.navbar {
-        background-color: white !important;
-    }
     div.name > h1 {
         color: black !important;
     }
     div#dropdown-menu > div {
-        background: black;
+        background: #fff;
     }
     div.nav-logo-container {
         left: 20px;

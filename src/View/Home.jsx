@@ -1,8 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
 import './Home.css';
-import milkyway from '../graphics/milkway.jpeg';
-import downArrow from '../graphics/down-arrow.png';
+// import background from '../graphics/milkway.jpeg';
+import background from '../graphics/urban-sunset.jpeg';
+import downArrowWhite from '../graphics/down-arrow-white.png';
+import downArrowBlack from '../graphics/down-arrow-black.png';
+
 import github from '../graphics/github-logo.png';
 import linkedin from '../graphics/linkedin-logo.png';
 import gmail from '../graphics/gmail-logo.png';
@@ -10,7 +13,6 @@ import gmail from '../graphics/gmail-logo.png';
 const Home = () => {
     const resumeLink = "https://drive.google.com/file/d/1qG8u6GIYubA7Doar0MMT1WAykP31-Lc6/view?usp=sharing"
     const handleOnClick = () => {
-        console.log('click to about')
         document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 
     }
@@ -22,9 +24,11 @@ const Home = () => {
     return (  
         <section id="home">
             <div className="background-img">
-                <img src={milkyway} alt="milkyway-background" />
+                <img src={background} alt="milkyway-background" />
                 <div onClick = {handleOnClick} className="move-down">
-                    <img src={downArrow} alt= "v" />
+                    <img src={downArrowWhite} alt= "v"  className="whiteArrow"/>
+                    <img src={downArrowBlack} alt= "v"  className= "blackArrow"/>
+
                 </div>
 
             </div>
@@ -32,7 +36,7 @@ const Home = () => {
 
             <div className="intro">
                 <h2>Hi there, </h2>
-                <h1> I Am  <span className="text"></span> </h1>
+                <h1> I Am A <span className="text"></span> </h1>
             </div>
             <div className= "socialnetwork">
                 <div onClick= {() => window.open('https://github.com/bitngu') }className="github">
