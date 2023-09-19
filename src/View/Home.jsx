@@ -39,7 +39,7 @@ const Home = () => {
                 <h1> I Am A <span className="text"></span> </h1>
             </div>
             <div className= "socialnetwork">
-                <div onClick= {() => window.open('https://github.com/bitngu') }className="github">
+                <div onClick= {() => window.open('https://github.com/bitngu') } className="github">
                     <img src = {github} alt="github-logo" />
                 </div>
                 <div onClick= {() => window.open('https://www.linkedin.com/in/bitngu/')} className="linkedin">
