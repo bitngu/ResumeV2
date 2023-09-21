@@ -1,0 +1,137 @@
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #F5F5F5;*/
+    scroll-margin-top: 100px;
+
+
+    /* background: linear-gradient(180deg, #b9a885 15%, #cac2ad); */
+}
+
+div.title-education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+div.title-education > p {
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFF0;
+
+}
+
+
+/*div.education-content {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    margin-left: 20px;*/
+/*    margin-right: 20px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*div.vertical-bar {*/
+/*    width: .5px;*/
+/*    margin-right: 20px;*/
+/*    background-color: black;*/
+/*    margin-top: -30px;*/
+/*    position: relative;*/
+/*}*/
+
+/*span.circle-dot {*/
+/*    border-radius: 8px;*/
+/*    height: 16px;*/
+/*    width: 16px;*/
+/*    background-color: black;*/
+/*    position: absolute;*/
+
+/*    */
+/*}*/
+
+
+/*div.school,div.experience {*/
+/*    border: solid .1px;*/
+/*    padding-left: 10px;*/
+/*    padding-right: 10px;*/
+/*    margin-bottom: 30px;*/
+/*    padding-bottom: 20px;*/
+/*    max-width: 500px;*/
+/*}*/
+/*div.education-content h4 {*/
+/*    font-size: 1.1rem;*/
+/*    margin-top: 20px;*/
+/*    margin-bottom: 0;*/
+/*    position: relative;*/
+
+/*}*/
+
+/*div.education-content h3 {*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*div.education-content p {*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+/*div.education-content span {*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 20px;*/
+
+/*}*/
+/*h4 > span.circle-dot {*/
+/*    left: -39px;*/
+/*    top: -2px;*/
+/*}*/
+
+
+/*section#skills {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    background-color: #000;*/
+/*    color: #FFF;*/
+/*    padding-top: 50px;*/
+/*    padding-bottom: 50px;*/
+/*}*/
+
+/*section#skills > h1 {*/
+/*    font-size: 1.5rem;*/
+/*}*/
+
+/*section#skills > div {*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/*ul.list-of-skills {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    column-count: 3;*/
+/*}*/
+
+/*ul.list-of-skills > li {*/
+/*    list-style-type: none;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+
+/*}*/
+/*ul.list-of-skills > li > img {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    object-fit: contain;*/
+/*}*/
+
+
+
+/*ul.list-of-skills * {*/
+/*    margin-bottom: 10px;*/
+/*    font-size: 1.2rem;*/
+/*}*/

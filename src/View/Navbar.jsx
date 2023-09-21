@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const handleOnClick = (e) => {
         let to = e.target.textContent.toLowerCase().trim()
-        document.getElementById(to).scrollIntoView({behavior: 'smooth'});
+        document.getElementById(to).scrollIntoView({behavior: 'smooth', block: 'start'});
         if(windowX <= 850){
             document.getElementById('dropdown-menu').click();
         }
@@ -25,13 +25,13 @@ const Navbar = () => {
    useEffect(() => {
         const homeHeight = document.getElementById('home').clientHeight-50;
         const aboutHeight = document.getElementById('about').clientHeight;
-        const eduHeight = document.getElementById('education').clientHeight;
+        const expHeight = document.getElementById('experience').clientHeight;
         const projHeight = document.getElementById('project').clientHeight;
 
         if (windowX > 850){
             document.getElementById('navhome_').style.width = '0';
             document.getElementById('navabout_').style.width = '0';
-            document.getElementById('naveducation_').style.width = '0';
+            document.getElementById('navexperience_').style.width = '0';
             document.getElementById('navproject_').style.width = '0';
             document.getElementById('navcontact_').style.width = '0';
 
@@ -42,11 +42,11 @@ const Navbar = () => {
                 document.getElementById('navabout_').style.width = 'inherit';
                 document.getElementById('navabout_').style.transform = 'scaleX(1.8)';
 
-            }else if (windowY <= homeHeight + aboutHeight + eduHeight){
-                document.getElementById('naveducation_').style.width = 'inherit';
-                document.getElementById('naveducation_').style.transform = 'scaleX(1.8)';
+            }else if (windowY <= homeHeight + aboutHeight + expHeight){
+                document.getElementById('navexperience_').style.width = 'inherit';
+                document.getElementById('navexperience_').style.transform = 'scaleX(1.8)';
 
-            }else if(windowY <= homeHeight + aboutHeight + eduHeight + projHeight ){
+            }else if(windowY <= homeHeight + aboutHeight + expHeight + projHeight ){
                 document.getElementById('navproject_').style.width = 'inherit';
                 document.getElementById('navproject_').style.transform = 'scaleX(1.8)';
 
@@ -59,7 +59,7 @@ const Navbar = () => {
     }else {
         document.getElementById('dropdownhome_').style.fontWeight = '300';
         document.getElementById('dropdownabout_').style.fontWeight = '300';
-        document.getElementById('dropdowneducation_').style.fontWeight = '300';
+        document.getElementById('dropdownexperience_').style.fontWeight = '300';
         document.getElementById('dropdownproject_').style.fontWeight = '300';
         document.getElementById('dropdowncontact_').style.fontWeight = '300';
 
@@ -69,9 +69,9 @@ const Navbar = () => {
         }
         else if (windowY <= homeHeight + aboutHeight){
             document.getElementById('dropdownabout_').style.fontWeight = '600';
-        }else if (windowY <= homeHeight + aboutHeight + eduHeight ){
-            document.getElementById('dropdowneducation_').style.fontWeight = '600';
-        }else if( windowY <= homeHeight + aboutHeight + eduHeight + projHeight){
+        }else if (windowY <= homeHeight + aboutHeight + expHeight ){
+            document.getElementById('dropdownexperience_').style.fontWeight = '600';
+        }else if( windowY <= homeHeight + aboutHeight + expHeight + projHeight){
             document.getElementById('dropdownproject_').style.fontWeight = '600';
         }else {
             document.getElementById('dropdowncontact_').style.fontWeight = '600';
@@ -90,18 +90,18 @@ const Navbar = () => {
     let home_section_height = document.getElementById('home').offsetHeight - 25;
     let dropdown_menu = document.getElementById("dropdown-menu");
     if(windowY >= home_section_height){
-        navbar.style.backgroundColor = '#fff';
-        container.style.color = '#000';
+        navbar.style.backgroundColor = 'rgba(22, 41, 54, 0.7)';
+        container.style.color = '#FFFF9';
         // dropdown_menu.style.background = '#000';
-        navbar_overlay.style.backgroundColor = "#FFFFFF80"
+        navbar_overlay.style.backgroundColor = "rgba(22, 41, 54, 0.7)"
         scrollUp.style.display = 'block';
-        for (let i = 0; i < texts.length; i++) {
-            texts[i].style.color = '#000';
-            hr[i].style.background = '#000';
-        }
-        for (let i = 0; i < dropdown_menu.children.length; i++) {
-            dropdown_menu.children[i].style.background = "#000";
-        }
+        // for (let i = 0; i < texts.length; i++) {
+        //     texts[i].style.color = '#000';
+        //     hr[i].style.background = '#000';
+        // }
+        // for (let i = 0; i < dropdown_menu.children.length; i++) {
+        //     dropdown_menu.children[i].style.background = "#000";
+        // }
     }else{
         scrollUp.style.display = 'none';
         navbar.style.backgroundColor = 'transparent';
@@ -117,20 +117,20 @@ const Navbar = () => {
             dropdown_menu.children[i].style.background = "#fff";
         }
     }
-    let isVisibleOverlay = document.getElementsByClassName("dropdown-selection")[0].offsetHeight > 0;
-    if (isVisibleOverlay){
-        let dropdown_menu_options = document.getElementsByClassName("dropdown-selection")[0]
-        if(windowY >= home_section_height) {
-            for (let i = 0; i < dropdown_menu_options.children.length; i++) {
-                dropdown_menu_options.children[i].style.color = "#000";
-            }
-        }
-        else {
-            for (let i = 0; i < dropdown_menu_options.children.length; i++) {
-                dropdown_menu_options.children[i].style.color = "#fff";
-            }
-        }
-    }
+    // let isVisibleOverlay = document.getElementsByClassName("dropdown-selection")[0].offsetHeight > 0;
+    // if (isVisibleOverlay){
+    //     let dropdown_menu_options = document.getElementsByClassName("dropdown-selection")[0]
+    //     if(windowY >= home_section_height) {
+    //         for (let i = 0; i < dropdown_menu_options.children.length; i++) {
+    //             dropdown_menu_options.children[i].style.color = "#000";
+    //         }
+    //     }
+    //     else {
+    //         for (let i = 0; i < dropdown_menu_options.children.length; i++) {
+    //             dropdown_menu_options.children[i].style.color = "#fff";
+    //         }
+    //     }
+    // }
 
    }, [windowY])
 
@@ -161,8 +161,8 @@ const Navbar = () => {
            let dropdown_menu_options = document.getElementsByClassName("dropdown-selection")[0].querySelectorAll('h2')
            let hr_line = [...document.getElementsByClassName("dropdown-hr")]
            if(windowY >= home_section_height) {
-               dropdown_menu_options.forEach((menu)=>{menu.style.color = '#000'})
-               hr_line.forEach((hr) => {hr.style.backgroundColor = "black"})
+               // dropdown_menu_options.forEach((menu)=>{menu.style.color = '#000'})
+               // hr_line.forEach((hr) => {hr.style.backgroundColor = "black"})
 
            }
            else {
@@ -192,8 +192,8 @@ const Navbar = () => {
                     <div className= 'navbar-hr' id = 'navabout_'></div>
                </div>
                <div className="outerText">
-                    <h2 onClick = {handleOnClick} > Education </h2> 
-                    <div className= 'navbar-hr' id = 'naveducation_'></div>
+                    <h2 onClick = {handleOnClick} > Experience </h2>
+                    <div className= 'navbar-hr' id = 'navexperience_'></div>
                </div>
 
                <div className="outerText">
@@ -216,7 +216,7 @@ const Navbar = () => {
                     <div className= 'dropdown-hr'></div>
                     <h2 id = 'dropdownabout_' onClick = {handleOnClick} > About</h2>
                     <div className= 'dropdown-hr'></div>
-                    <h2 id = 'dropdowneducation_' onClick = {handleOnClick} > Education </h2>
+                    <h2 id = 'dropdownexperience_' onClick = {handleOnClick} > Experience </h2>
                     <div className= 'dropdown-hr'></div>
                     <h2 id = 'dropdownproject_' onClick = {handleOnClick} > Project</h2>
                     <div className= 'dropdown-hr'></div>

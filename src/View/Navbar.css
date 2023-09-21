@@ -144,7 +144,6 @@ div.overlay {
     transition: height .5s;
     position: absolute;
     top: 75px;
-    left: 10px;
     display: none;
 }
 div.dropdown-selection {
@@ -161,6 +160,7 @@ div.dropdown-selection > h2 {
     margin-bottom: 5px;
     margin-top: 10px;
     color: #fff;
+    margin-left: 10px;
 }
 
 div.dropdown-selection > div.dropdown-hr{
