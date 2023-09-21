@@ -22,7 +22,7 @@ div.name > h1 {
 }
 div.name > h1:hover {
     font-weight: bolder;
-    text-shadow: 0.5px 1px;
+    text-shadow: 1px 1px;
     /* color:dodgerblue !important; */
 }
 
@@ -108,8 +108,9 @@ div.scrollUp-button {
     text-align: center;
     width: 35px;
     height: 35px;
-    background-color: black;
+    background-color: rgba(22, 41, 54);
     display: none;
+    border-radius: 50%;
 }
 div.scrollUp-button:hover {
     cursor: pointer;
@@ -118,13 +119,13 @@ div.scrollUp-button > img {
     width: 10px;
     height: auto;
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 
 
 div.nav-logo-container {
     position: fixed;
-    left: 60px;
+    left: 25px;
     color: #ffffff;
 
 }

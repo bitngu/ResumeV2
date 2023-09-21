@@ -7,7 +7,7 @@ import reactLogo from '../graphics/react-logo.png'
 import pythonLogo from '../graphics/python-logo.png'
 import seleniumLogo from '../graphics/selenium-logo.png'
 import avltree from '../graphics/avltree.png'
-import graphs from '../graphics/graphs.png'
+// import graphs from '../graphics/graphs.png'
 import cppLogo from '../graphics/cpp-logo.png'
 import cLogo from '../graphics/clogo.png'
 import shopping from '../graphics/shoptillyoudrop.jpg'
@@ -120,33 +120,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="project-row">
-                <div className="project-content" > 
-                    <div className="project-img-container">
-                        <img src={graphs} alt= "" />
-                    </div>
-                    <div className="project-description">
-                        <h3> BFS &amp; DFS </h3>
-                        <div className="create-with">
-                            <div className= "logos-container">
-                                <h4>Created using: </h4>
-                                <img src= {cppLogo} alt="Cpp Logo" />
-                            </div>
-                            <p>Created the Breadth First Search and Depth First Search algorithm in C++ using the Stack and Queue Data Structure as well as implementing 
-                                the Adjacency Matrix and Adjacency List to get the Transitive Closure in the graph. 
-                            </p>
-                        </div>
-                        <div className="project-links">
-                            <div onClick = {()=> window.open('https://github.com/bitngu/Data-Structures-Algorithm/tree/main/C%2B%2B/Graphs')} className="github-link">
-                                Github
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <div className="project-row">
                 <div className="project-content"> 
                     <div className="project-img-container">

@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <div className="contact-content">
                 <p>If you are interested in collaboration or would like to hire me - please contact me by e-mail
-                    <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
+                    at <span id = 'contact-email'> bitngu3@gmail.com </span> or use the form below.
                 </p>
             <form
             name = 'contact-form'

@@ -142,15 +142,19 @@ div.socialnetwork {
     margin-bottom: 40px;
   }
 
-  div.socialnetwork > div {
-    margin-right: 50px;
-  }
 
   div.github, div.linkedin, div.gmail {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    border-radius: 30px;
+    padding: 10px;
+    border: solid #FFFFF0;
+    margin-right: 30px;
+    overflow: hidden;
+    text-align: center;
   }
+
   div.github >img, div.linkedin > img, div.gmail * {
     width: 100%;
     height: 100%;
@@ -158,6 +162,32 @@ div.socialnetwork {
   div.gmail {
     margin-right: 0 !important;
   }
+
+div.github:hover > img, div.linkedin:hover > img, div.gmail:hover img {
+    animation: forward360 0.5s linear;
+}
+div.github:hover > img, div.linkedin:hover > img, div.gmail:hover img{
+    animation: reverse360 0.5s linear;
+}
+
+@keyframes forward360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:  rotate(359deg);
+    }
+}
+
+@keyframes reverse360 {
+    from {
+        transform:  rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+
+}
 
 
 div.resume{
@@ -174,8 +204,10 @@ div.resume{
 
 
 div.resume:hover {
-  background-color: white;
-  color:black;
+    background-color: white;
+    color:rgba(22, 41, 54);
+    cursor: pointer;
+    
 }
 
 

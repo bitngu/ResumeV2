@@ -11,7 +11,7 @@ import linkedin from '../graphics/linkedin-logo.png';
 import gmail from '../graphics/gmail-logo.png';
 
 const Home = () => {
-    const resumeLink = "https://drive.google.com/file/d/1qG8u6GIYubA7Doar0MMT1WAykP31-Lc6/view?usp=sharing"
+    const resumeLink = "https://docs.google.com/document/d/1Rm5cPXMIhaa-VHCgBxZpefPsOcqra-lIncIZQgVti_4/edit?usp=sharing"
     const handleOnClick = () => {
         document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 
@@ -19,7 +19,6 @@ const Home = () => {
     const displayCV = () => {
         window.open(resumeLink, '_blank');
     }
-
 
     return (  
         <section id="home">

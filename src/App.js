@@ -16,13 +16,12 @@ function App() {
       <Home />
         <div id="padding"> </div>
         <div id= 'transition'>
-
-        <About />
-      <Experience/>
-      <Projects/>
-      <Contact />
-      </div>
-      <Footer />
+          <About />
+          <Experience/>
+          <Projects/>
+          <Contact />
+          <Footer />
+        </div>
     </div>
 
 
