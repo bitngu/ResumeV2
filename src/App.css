@@ -15,12 +15,29 @@ button:focus {
     position: relative;
 }
 
+div#padding{
+    height: 100px;
+    width: 100%;
+
+    /*background: linear-gradient(to bottom, #000000, #394249)*/
+    background: linear-gradient(to bottom, #000000 0%, #394249 75%, #394249 100%);
+
+}
+div#transition{
+    /*background: linear-gradient(to bottom, rgba(57, 66, 73, .9) 0%, #B6AFA8 5%, #C0C0C0 100%)*/
+    /*background: linear-gradient(to bottom, rgba(57, 66, 73, 1) 0%, #D8BFD8 100%);*/
+    /*background: linear-gradient(to bottom, rgba(57, 66, 73, 1) 0%, rgba(57, 66, 73, 0.8) 2% ,#AAB5AA 10%);*/
+    background: linear-gradient(to bottom, rgba(57, 66, 73, 1) 0%, rgba(57, 66, 73, 0.9) 1% , #697073 90%, #162936 100%)
+
+
+
+}
+
 #about::before,#education::before, #project::before, #contact::before {
     content: '';
     display: block;
     height:80px;
     visibility: hidden;
-    background-color: black;
     background: black;
 }
 
@@ -39,11 +56,12 @@ div.divider {
 div.divider > span {
     font-size: 3rem;
     font-weight: bold;
+    color: #FFFFF0;
 }
 
 div.divider .hr-divider {
     width: 30px;
     height: 1px;
-    background-color: #000;
+    background-color: #FFFFF0;
     margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F5F5F5;
+    /*background-color: #F5F5F5;*/
 
     /* background: linear-gradient(180deg, #b9a885 15%, #cac2ad); */
 }
@@ -17,10 +17,13 @@ div.title-education{
     margin-top: 25px;
 }
 
-div.title-education > h1 {
+div.title-education > p {
     font-size: 2rem;
     text-align: center;
+    color: #FFFFF0;
+
 }
+
 
 div.education-content {
     display: flex;

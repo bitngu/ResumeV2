@@ -3,8 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background:linear-gradient(180deg, #cac2ad 15%, #d4c9ad) */
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
 }
 
 div.project-row {

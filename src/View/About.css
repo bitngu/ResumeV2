@@ -3,25 +3,25 @@
     height: auto;
     width: 100%;
     display: block;
+    margin-bottom: 50px;
     /* flex-direction: column;
     justify-content: center;
     align-items: center; */
-
+    /*background-color: #D6EAF8;*/
 }
-
-
 
 div.title-about {
     /* margin-top: 25px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 div.title-about > h1 {
     font-weight: bolder;
     font-size: 2rem;
+    color: #FFFFF0;
 }
 
 div.title-about span {
@@ -41,16 +41,18 @@ div.profile {
 
 div.profile-pic{
     width: 250px;
-    height: 250px
 }
 
+
 div.profile-pic > img {
-    box-shadow: 0px 0px 10px 2px;
+    box-shadow: 0 0 10px 2px;
+    border-radius: 50%;
 }
 
 div.info {
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 400px;
     width: 100%;
 }
 div.greetings {
@@ -62,6 +64,12 @@ div.greetings {
     margin-bottom: 10px;
 
 }
+div.greetings > h1 {
+    font-size: 1.5rem;
+    color: #fffdf9;
+    text-align: center;
+}
+
 
 div.greetings:nth-child(1) {
     font-weight: 400;
@@ -69,24 +77,20 @@ div.greetings:nth-child(1) {
     font-size: 2rem;
 }
 
-div.greetings span {
-    font-weight: bold;
-}
 div.info > p {
     text-align: justify;
     font-weight: 600;
+    color: #F5F5DC;
+    padding-bottom: 10px;
 }
-
-
-
 
 @media (min-width: 768px){
     div.profile {
         flex-direction: row;
     }
     div.profile-pic > img {
-        border-radius: 0;
-        box-shadow: 15px 15px 10px 0px;
+        border-radius: 50%;
+        box-shadow: 15px 15px 10px 0;
     }
     div.info {
         width: 60%;
@@ -94,16 +98,13 @@ div.info > p {
         margin-left:35px;
 
     }
-    div.profile-pic {
-        width: 450px;
-        height: auto;
-    }
     div.greetings {
         flex-direction: column;
         justify-content: initial;
         align-items: flex-start;
-    margin-top: 20px;
+        margin-top: 20px;
     }
+
     div.subsection > ul {
         column-count: 2;
     }
@@ -115,19 +116,8 @@ div.info > p {
     }
 
 }
-
-
-@media (max-width: 850px){
-    div.greetings > h1 {
-        font-size: 1.5rem;
-    }
-}
-
     
 @media (min-width: 850px) {
-    div.greetings > h1 {
-        font-size: 2rem;
-    }
     div.info > p {
         font-size: 1rem;
         

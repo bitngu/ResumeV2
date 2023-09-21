@@ -81,6 +81,7 @@ const Navbar = () => {
 
    //change color of navbar as scroll
    useEffect (()=>{
+    let navbar_overlay = document.getElementsByClassName('overlay')[0];
     let navbar = document.getElementsByClassName('navbar')[0];
     let hr = document.getElementsByClassName('navbar-hr');
     let texts = document.getElementById('navbar-menu').children;
@@ -92,6 +93,7 @@ const Navbar = () => {
         navbar.style.backgroundColor = '#fff';
         container.style.color = '#000';
         // dropdown_menu.style.background = '#000';
+        navbar_overlay.style.backgroundColor = "#FFFFFF80"
         scrollUp.style.display = 'block';
         for (let i = 0; i < texts.length; i++) {
             texts[i].style.color = '#000';
@@ -104,6 +106,7 @@ const Navbar = () => {
         scrollUp.style.display = 'none';
         navbar.style.backgroundColor = 'transparent';
         container.style.color = '#fff'
+        navbar_overlay.style.backgroundColor = "#33333380"
         // dropdown_menu.style.background = '#fff';
 
         for (let i = 0; i < texts.length; i++) {
@@ -141,8 +144,8 @@ const Navbar = () => {
 
        }
         else{
-           document.getElementsByClassName('overlay')[0].style.height = '300px';
-           document.getElementsByClassName('dropdown-selection')[0].style.height = '300px';
+           document.getElementsByClassName('overlay')[0].style.height = '200px';
+           document.getElementsByClassName('dropdown-selection')[0].style.height = '200px';
            setIsToggle(true);
         }
    }
@@ -159,11 +162,14 @@ const Navbar = () => {
            let hr_line = [...document.getElementsByClassName("dropdown-hr")]
            if(windowY >= home_section_height) {
                dropdown_menu_options.forEach((menu)=>{menu.style.color = '#000'})
-               hr_line.forEach((hr) => {hr.style.background = "black"})
+               hr_line.forEach((hr) => {hr.style.backgroundColor = "black"})
+
            }
            else {
                dropdown_menu_options.forEach((menu)=>{menu.style.color = '#fff'})
-               hr_line.forEach((hr) => {hr.style.background = "white"})
+               hr_line.forEach((hr) => {hr.style.backgroundColor = "white"})
+               console.log()
+
            }
        }
    }, [windowX, windowY, isToggle])
@@ -173,11 +179,6 @@ const Navbar = () => {
             <div onClick = {() => window.scrollTo({top:0, behavior: 'smooth'})} className= "nav-logo-container">
                 <div className="nav-logo">
                     <span> Bi Nguyen </span>
-                    <p></p>
-                    <style>
-                        @import url('https://fonts.googleapis.com/css2?family=Handlee');
-                    </style>
-
                 </div>
          
             </div>

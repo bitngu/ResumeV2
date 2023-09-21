@@ -15,8 +15,8 @@ import './Education.css'
 const Education = () => {
     return ( 
         <section id = "education">
-            <div className ='title-education'> 
-                <h1> Education &amp; Experience </h1>
+            <div className ='title-education'>
+                <p>Work <b>Experience </b></p>
                 <div className="divider">
                     <div className="hr-divider"></div>
                     <span> * </span>
@@ -43,77 +43,77 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <section id = 'skills'>
-                <h1>Skills</h1>
-                <div>
-                    <ul className="list-of-skills">
-                        {/* 1 */}
-                        <li> 
-                            <img src={cLogo} alt="" />
-                            <span>C</span>
-                        </li>
-                        {/* 2 */}
-                        <li>
-                            <img src={rLogo} alt="" />
-                            <span> R </span>
-                        </li>
-                        {/* 3 */}
-                        <li>
-                            <img src={htmlLogo} alt="" />
-                            <span> HTML </span>
-                        </li>
-                        {/* 4 */}           
-                        <li>
-                            <img src={reactLogo} alt="" />
-                            <span> React </span>
-                        </li>
-                        {/* 1 */}
-                        <li>
-                            <img src={cppLogo} alt="" />
-                            <span>C++</span>
-                        </li>
-                        {/* 2 */}
-                        <li>
-                            <img src={pythonLogo} alt="" />
-                            <span>Python</span>
-                        </li>
-                        {/* 3 */}
-                        <li>
-                            <img src={cssLogo} alt="" />
-                            <span> CSS </span>
-                        </li>
-                        {/* 4 */}
-                        <li>
-                            <img src={nodeLogo} alt="" />
-                            <span> Node </span>
-                        </li>
-                        {/* 1 */}
-                        <li>
-                            <img src={javaLogo} alt="" />
-                            <span> Java </span>
-                        </li>
-                        {/* 2 */}
-                        <li>
-                            <img src={gitLogo} alt="" />
-                            <span> Git </span>
-                        </li>
-                        {/* 3 */}
-                        <li>
-                            <img src={jsLogo} alt="" />
-                            <span> Javascript </span>
-                        </li>
-                        {/* 4 */}
-                        <li>
-                            <img src={seleniumLogo} alt="" />
-                            <span> Selenium </span>
-                        </li>
-                             
-                    </ul>
+            {/*<section id = 'skills'>*/}
+            {/*    <h1>Skills</h1>*/}
+            {/*    <div>*/}
+            {/*        <ul className="list-of-skills">*/}
+            {/*            /!* 1 *!/*/}
+            {/*            <li> */}
+            {/*                <img src={cLogo} alt="" />*/}
+            {/*                <span>C</span>*/}
+            {/*            </li>*/}
+            {/*            /!* 2 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={rLogo} alt="" />*/}
+            {/*                <span> R </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 3 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={htmlLogo} alt="" />*/}
+            {/*                <span> HTML </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 4 *!/           */}
+            {/*            <li>*/}
+            {/*                <img src={reactLogo} alt="" />*/}
+            {/*                <span> React </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 1 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={cppLogo} alt="" />*/}
+            {/*                <span>C++</span>*/}
+            {/*            </li>*/}
+            {/*            /!* 2 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={pythonLogo} alt="" />*/}
+            {/*                <span>Python</span>*/}
+            {/*            </li>*/}
+            {/*            /!* 3 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={cssLogo} alt="" />*/}
+            {/*                <span> CSS </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 4 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={nodeLogo} alt="" />*/}
+            {/*                <span> Node </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 1 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={javaLogo} alt="" />*/}
+            {/*                <span> Java </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 2 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={gitLogo} alt="" />*/}
+            {/*                <span> Git </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 3 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={jsLogo} alt="" />*/}
+            {/*                <span> Javascript </span>*/}
+            {/*            </li>*/}
+            {/*            /!* 4 *!/*/}
+            {/*            <li>*/}
+            {/*                <img src={seleniumLogo} alt="" />*/}
+            {/*                <span> Selenium </span>*/}
+            {/*            </li>*/}
+            {/*                 */}
+            {/*        </ul>*/}
 
 
-                </div>
+            {/*    </div>*/}
 
-            </section>
+            {/*</section>*/}
         </section>
         
     );
