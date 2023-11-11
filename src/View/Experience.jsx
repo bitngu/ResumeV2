@@ -23,7 +23,7 @@ const Experience = () => {
                         </div>
                         <div className= 'job-desc'>
                             <h3> System Test Engineer </h3>
-                            <p>  September 2022 - May 2022 </p>
+                            <p>  September 2022 - May 2023 </p>
                             <div className='job-desc-divider'></div>
                             <h3> Qualcomm </h3>
                             <p> Worked in the Core Platform Department, specifically for the Boot and Kernel team developing test plans for mobile system boot up, streamlining python automations to reduce manual effort and worked with stakeholders to triage issues to support chipset validation through all stages of SDLC.  </p>
