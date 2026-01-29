@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8712db10.chunk.css",
+    "main.js": "/static/js/main.787ff2c1.chunk.js",
+    "main.js.map": "/static/js/main.787ff2c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3e4841ed.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3e4841ed.js.map",
+    "static/js/2.171d43fb.chunk.js": "/static/js/2.171d43fb.chunk.js",
+    "static/js/2.171d43fb.chunk.js.map": "/static/js/2.171d43fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8712db10.chunk.css.map": "/static/css/main.8712db10.chunk.css.map",
+    "static/js/2.171d43fb.chunk.js.LICENSE.txt": "/static/js/2.171d43fb.chunk.js.LICENSE.txt",
+    "static/media/avltree.7dc9b176.png": "/static/media/avltree.7dc9b176.png",
+    "static/media/battleship.773f5e57.jpg": "/static/media/battleship.773f5e57.jpg",
+    "static/media/briefcase.70cbcb77.png": "/static/media/briefcase.70cbcb77.png",
+    "static/media/cache.582c5dc7.jpg": "/static/media/cache.582c5dc7.jpg",
+    "static/media/clogo.b589c83b.png": "/static/media/clogo.b589c83b.png",
+    "static/media/cpp-logo.2b227639.png": "/static/media/cpp-logo.2b227639.png",
+    "static/media/css3-logo.5fa4198d.png": "/static/media/css3-logo.5fa4198d.png",
+    "static/media/github-logo.6ca95f10.png": "/static/media/github-logo.6ca95f10.png",
+    "static/media/js-logo.e65fad8a.png": "/static/media/js-logo.e65fad8a.png",
+    "static/media/linkedin-profile.d30d24f3.jpg": "/static/media/linkedin-profile.d30d24f3.jpg",
+    "static/media/minesweeper.1f5d9290.jpg": "/static/media/minesweeper.1f5d9290.jpg",
+    "static/media/node-logo.f1d5b02e.png": "/static/media/node-logo.f1d5b02e.png",
+    "static/media/proportion_plot_lol.83cc6ced.png": "/static/media/proportion_plot_lol.83cc6ced.png",
+    "static/media/react-logo.283f9f86.png": "/static/media/react-logo.283f9f86.png",
+    "static/media/shoptillyoudrop.2f398302.jpg": "/static/media/shoptillyoudrop.2f398302.jpg",
+    "static/media/tractivity.a0ba1c59.png": "/static/media/tractivity.a0ba1c59.png",
+    "static/media/ucdavis-logo.8c2f3de3.png": "/static/media/ucdavis-logo.8c2f3de3.png",
+    "static/media/urban-sunset.6fd39370.jpeg": "/static/media/urban-sunset.6fd39370.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e4841ed.js",
+    "static/js/2.171d43fb.chunk.js",
+    "static/css/main.8712db10.chunk.css",
+    "static/js/main.787ff2c1.chunk.js"
+  ]
+}
